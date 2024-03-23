@@ -1,9 +1,98 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My YouTube Channel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
 <body>
-  <h1>Colton Evans</h1>
-  <p>I do hope I'm doing this right!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/nin.jpg" alt="Logo">
+            <h1>Ninjumper</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to My YouTube Channel</h2>
+        <h3>Channel Introduction</h3>
+            <p>My name is Colton and I started this YouTube channel about 2 years ago. <br>
+                This channel contains gaming content of me and my friends playing games and having a good time.<br>
+                The intended audience are people like myself who enjoy to watch entertaining gaming videos. <br>
+                My videos are primarily focused on Virtual Reality games.
+            </p>
+            <br>
+            <br>
+            <h2>Popular Videos</h2>
+        <div class="video-container">
+            <div class="video">
+                <h3>Beating the EnderDragon in VR</h3>
+                <!-- Replace 'VIDEO_ID_1' with the actual ID of your YouTube video -->
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/siG0ayI3pJg?si=6iEPRkJYiR--feLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+            <div class="video">
+                <h3>Onward: Spec Ops</h3>
+                <!-- Replace 'VIDEO_ID_2' with the actual ID of your YouTube video -->
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/NITW3RKFxpI?si=EJ_kZgth74VTxmWT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+            <div class="video">
+                <h3>Among Us in VR</h3>
+                <!-- Replace 'VIDEO_ID_3' with the actual ID of your YouTube video -->
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/AtIiwT9rYDs?si=HFawW1hiAgG5n7E_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+        </div>
+    </section>
+
+        <!-- About Section -->
+        <section id="about" style="display: none;">
+            <h2>About Us</h2>
+            <p>My YouTube channel is a hobby of mine and not an attempt of making a career as an influencer. <br>
+               Playing video games with my friends has always relected many positive memories and I was <br>
+               hoping to make a Youtube channel so we could relive those memories and share with others.
+            </p>
+            <h3>Analytics</h3>
+            <figure>
+                <img src="img/sub_watch_time.jpg" alt="Sub Watch Time">
+                <figcaption>Watch time of people subscribed vs not subscribed.</figcaption>
+            </figure>
+            <p>
+                The image above is an analytic of the total watch time of my videos and measured by
+                those subscribed to my channel (mostly friends) and people not subscribed. I wanted
+                to show this to demonstrate that even though my audience is my friends that my views
+                are mostly random viewers.
+
+            </p>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>For inquiries or to find my content, you can reach out through the following platforms:</p>
+            <ul>
+                <li><a href="https://www.twitch.tv/ninjumper22" target="_blank">Twitch</a></li>
+                <li><a href="https://www.youtube.com/@ninjumper/videos" target="_blank">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@ninjumper?lang=en" target="_blank">TikTok</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My YouTube Channel</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
- 
 </html>
