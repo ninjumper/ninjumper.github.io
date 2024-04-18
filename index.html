@@ -9,13 +9,14 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <div class="logo">
             <img src="img/nin.jpg" alt="Logo">
             <h1>Ninjumper</h1>
         </div>
         <nav>
+            <button id="themeToggle">Toggle Theme</button>
+
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -24,9 +25,7 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Home Section -->
     <section id="home">
         <h2>Welcome to My YouTube Channel</h2>
         <h3>Channel Introduction</h3>
@@ -39,22 +38,23 @@
             <br>
             <h2>Popular Videos</h2>
         <div class="video-container">
-            <div class="video">
-                <h3>Beating the EnderDragon in VR</h3>
-                <!-- Replace 'VIDEO_ID_1' with the actual ID of your YouTube video -->
-                <iframe width="400" height="400" src="https://www.youtube.com/embed/siG0ayI3pJg?si=6iEPRkJYiR--feLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+            <div class="video" id= "top" >
+                <h3 id= "top">Beating the EnderDragon in VR</h3>
+                <iframe id= "top" width="400" height="400" src="https://www.youtube.com/embed/siG0ayI3pJg?si=6iEPRkJYiR--feLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+                <div class="video-group">
             <div class="video">
                 <h3>Onward: Spec Ops</h3>
-                <!-- Replace 'VIDEO_ID_2' with the actual ID of your YouTube video -->
-                <iframe width="400" height="400" src="https://www.youtube.com/embed/NITW3RKFxpI?si=EJ_kZgth74VTxmWT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/NITW3RKFxpI?si=EJ_kZgth74VTxmWT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <div class="video">
                 <h3>Among Us in VR</h3>
-                <!-- Replace 'VIDEO_ID_3' with the actual ID of your YouTube video -->
-                <iframe width="400" height="400" src="https://www.youtube.com/embed/AtIiwT9rYDs?si=HFawW1hiAgG5n7E_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+                <iframe width="400" height="400" src="https://www.youtube.com/embed/AtIiwT9rYDs?si=HFawW1hiAgG5n7E_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+                </div>
         </div>
     </section>
 
-        <!-- About Section -->
         <section id="about" style="display: none;">
             <h2>About Us</h2>
             <p>My YouTube channel is a hobby of mine and not an attempt of making a career as an influencer. <br>
@@ -62,7 +62,7 @@
                hoping to make a Youtube channel so we could relive those memories and share with others.
             </p>
             <h3>Analytics</h3>
-            <figure>
+            <figure class="aboutImage">
                 <img src="img/sub_watch_time.jpg" alt="Sub Watch Time">
                 <figcaption>Watch time of people subscribed vs not subscribed.</figcaption>
             </figure>
@@ -76,7 +76,6 @@
 
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" style="display: none;">
             <h2>Contact Us</h2>
             <p>For inquiries or to find my content, you can reach out through the following platforms:</p>
@@ -88,7 +87,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 My YouTube Channel</p>
     </footer>
