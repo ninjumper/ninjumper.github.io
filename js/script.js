@@ -21,3 +21,20 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const themeToggle = document.getElementById("themeToggle");
+
+    themeToggle.addEventListener("click", function() {
+        const link = document.querySelector('link[href="css/theme.css"]');
+        if (link) {
+            link.remove();
+        } else {
+            const newLink = document.createElement("link");
+            newLink.rel = "stylesheet";
+            newLink.href = "css/theme.css";
+            document.head.appendChild(newLink);
+        }
+    });
+});
+
