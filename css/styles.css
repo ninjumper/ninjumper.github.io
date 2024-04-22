@@ -276,3 +276,59 @@ footer {
     }
 }
 
+#visitorForm {
+    max-width: 500px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #visitorForm label {
+    margin-bottom: 5px;
+  }
+  
+  #visitorForm input[type="text"],
+  #visitorForm input[type="email"],
+  #visitorForm input[type="tel"],
+  #visitorForm textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #visitorForm textarea {
+    height: 100px; 
+  }
+  
+  #visitorForm button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .checkbox-group label {
+    margin-right: 20px; 
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 5px; 
+  }
+  
+  #visitForm,
+  #thankYouMessage {
+      display: none;
+  }

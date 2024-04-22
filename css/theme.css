@@ -200,3 +200,32 @@ footer {
         margin-bottom: 0;
     }
 }
+
+#visitForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+#visitForm label {
+    grid-column: 1;
+}
+
+#visitForm input,
+#visitForm textarea {
+    grid-column: 1;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#visitForm button {
+    grid-column: 1;
+    padding: 10px 20px;
+}
+
+#thankYouMessage {
+    display: none;
+    text-align: center;
+}
